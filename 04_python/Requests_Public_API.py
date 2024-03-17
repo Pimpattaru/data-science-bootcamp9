@@ -36,7 +36,7 @@ with open("star_wars_people.csv", "w", newline="") as csvfile:
 
 # Homework02
 # requests pull data from public API
-response = requests.get('http://makeup-api.herokuapp.com/api/v1/products.json')
+response = get('http://makeup-api.herokuapp.com/api/v1/products.json')
 
 if response.status_code == 200:
     data = response.json()
